@@ -27,7 +27,6 @@ export class MenuController {
     @CognitoUser('sub') userId: string,
     @Param('id') id: string,
   ): Promise<Menu> {
-    console.log('findOne', userId, id);
     return this.menuService.findOne(userId, id);
   }
 

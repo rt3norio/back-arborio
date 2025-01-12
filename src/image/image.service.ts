@@ -58,7 +58,6 @@ export class ImageService {
   async deleteImage(key: string, userId: string) {
     try {
       // List all objects with the user's prefix
-      console.log('deleteImage', key, userId);
       const params = {
         Bucket: this.bucket,
         Prefix: `${userId}/`,
