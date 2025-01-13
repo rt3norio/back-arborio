@@ -6,7 +6,7 @@ async function bootstrap() {
 
   // Enable CORS
   app.enableCors({
-    origin: ['http://localhost:4200', 'https://arborio.menu'],
+    origin: ['http://localhost:4200', 'https://www.arborio.click'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
